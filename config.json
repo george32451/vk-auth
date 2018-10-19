@@ -1,0 +1,28 @@
+{
+    "app": {
+        "host": "localhost",
+        "port": 8023,
+        "schema": "https",
+        "url": "https://vk-base-auth-test.herokuapp.com"
+
+    },
+
+    "session": {
+        "secret": "secret",
+        "key": "sid",
+        "resave": "true",
+        "saveUninitialized": "true",
+        "cookie": {
+            "path": "/",
+            "httpOnly": true,
+            "maxAge": 900000000
+        }
+    },
+
+    "auth": {
+        "vk": {
+            "app_id": 6723552,
+            "secret": "secret"
+        }
+    }
+}

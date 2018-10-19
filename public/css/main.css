@@ -1,0 +1,57 @@
+body {
+    background: #f2f2f2;
+}
+
+a {
+    color: #006AB4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.demo {
+    width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    color: #4F6B72;
+    font-family: "PT Sans", Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.demo .permalink {
+    display: block;
+    color: #4F6B72;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.user-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.user-data {
+    padding-left: 60px;
+}
+
+.sign-out {
+    margin-top: 10px;
+}
+
+.error-msg {
+    padding: 5px;
+    border: 1px solid red;
+    margin-bottom: 8px;
+}
+
+.soc-auth, .sign-out {
+    margin-top: 10px;
+}
+
+

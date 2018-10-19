@@ -1,0 +1,25 @@
+extends layout
+ 
+block content
+  div(class="demo")
+
+    h1 Авторизация через vk.com
+    p
+      #user
+        if(user)
+          div(class="user-card")
+              div(class="user-data")
+              span Имя: #{user.username}
+              br
+              span Профиль: <a href="#{user.profileUrl}">#{user.profileUrl}</a>
+              br
+              #friends
+                  if(friends)
+                      ol
+                        each element in friends
+                            li=element
+              div(class="clear")
+          a(href="/sign-out", class="sign-out") Выйти
+        else
+          p Вы не авторизованы
+          a(href="/auth/vk") Авторизоваться
